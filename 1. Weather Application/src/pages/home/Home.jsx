@@ -1,13 +1,15 @@
 
-import Banner from "../../components/Banner"
-import Feature from "../../components/Feature"
-import Card from "../../components/Card"
-import Trust from "../../components/Trust"
+import Banner from "./Banner.jsx"
+import Feature from "./Feature.jsx"
+import Card from "./Card.jsx"
+import Trust from "./Trust.jsx"
+import Stay from "./Stay.jsx"
+import Blog from "./Blog.jsx"
 
 const Home = () => {
 
   return (
-    <div className="bg-[#1b1c1f] ">
+    <div className="bg-[#1b1c1f] mt-11 pt-8">
       {/* Banner text  */}
       <div className="flex items-center justify-center pb-5">
       <div className="text-white text-center py-7 w-[500px] md:w-[600px] lg:w-[100%]">
@@ -26,7 +28,7 @@ const Home = () => {
      </div>
 
       {/* Body */}
-      <div className="md:w-[65%] md:mx-auto">
+      <div className="w-[95%] xl:w-[65%] md:mx-auto">
       {/* Features Extension */}
       <div>
        <Feature/>
@@ -41,6 +43,16 @@ const Home = () => {
       <div>
         <Trust/>
       </div>
+      </div>
+
+      {/* Stay Weather Informed */}
+      <div  className="w-[100%] xl:w-[65%] md:mx-auto py-2  ">
+        <Stay/>
+      </div>
+
+      {/* Blog */}
+      <div>
+        <Blog/>
       </div>
 
     </div>

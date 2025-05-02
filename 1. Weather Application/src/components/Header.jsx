@@ -9,8 +9,8 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-[#1b1c1f] flex items-center justify-center ">
-      <nav className="flex items-center justify-between flex-wrap md:w-[65%]  p-6">
+    <div className="bg-[#1b1c1f] flex items-center justify-center fixed top-0 right-0 left-0 z-50">
+      <nav className="flex items-center justify-between flex-wrap  w-[95%] xl:w-[65%]  p-6">
         <div className="flex-shrink-0 text-white mr-6">
           <a href="/" className="flex items-center">
             <img
