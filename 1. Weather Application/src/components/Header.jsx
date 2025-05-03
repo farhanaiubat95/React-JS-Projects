@@ -1,5 +1,6 @@
 import { useState } from "react";
 import image from "../assets/images/dropWater.jpg";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,43 +51,45 @@ const Header = () => {
           } flex-grow lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-sm lg:flex-grow">
-            <a
-              href="/Features"
+            <Link
+              to="/features"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               Features
-            </a>
-            <a
-              href="/liveradar"
+            </Link>
+            <NavLink
+              to="/liveradar"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               Live Radar
-            </a>
-            <a
-              href="/hurricane-tracking"
+            </NavLink>
+
+            <Link
+              to="/hurricane-tracking"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               Hurricane Tracking
-            </a>
-            <a
-              href="/server-alerts"
+            </Link>
+            <Link
+              to="/server-alerts"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               Server Alerts
-            </a>
-            <a
-              href="/blog"
+            </Link>
+            <Link
+              to="/blog"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               Blog
-            </a>
-            <a
-              href="/api"
+            </Link>
+            <Link
+              to="/api"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               API
-            </a>
+            </Link>
           </div>
+
           <div>
             <a
               href="#"

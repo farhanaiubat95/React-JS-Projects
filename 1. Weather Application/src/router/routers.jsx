@@ -1,19 +1,13 @@
-// import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Layout from "./pages/Layout";
+import { Routes, Route } from "react-router-dom";
 import Home from "../pages/home/Home";
-// import Blogs from "./pages/Blogs";
-// import Contact from "./pages/Contact";
-// import NoPage from "./pages/NoPage";
+import LiveRadar from "../pages/LiveRadar.jsx";
+// You can add more pages here later
 
-export default function App() {
+export default function Router() {
   return (
-    <BrowserRouter>
-      <Routes>
-          <Route path="/" element={<Home />} ></Route>
-          {/* <Route path="/features" element={<Features />} ></Route>
-          <Route path="*" element={<NoPage />} ></Route> */}
-        </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/liveradar" element={<LiveRadar />} />
+    </Routes>
   );
 }
