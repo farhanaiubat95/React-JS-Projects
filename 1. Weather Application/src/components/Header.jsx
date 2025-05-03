@@ -53,38 +53,32 @@ const Header = () => {
           <div className="text-sm lg:flex-grow">
             <Link
               to="/features"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              className="block mt-4 px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               Features
             </Link>
             <NavLink
               to="/liveradar"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              className="block mt-4  px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               Live Radar
             </NavLink>
 
             <Link
-              to="/hurricane-tracking"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
-            >
-              Hurricane Tracking
-            </Link>
-            <Link
               to="/server-alerts"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              className="block mt-4  px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               Server Alerts
             </Link>
             <Link
-              to="/blog"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              to="/weather-blog"
+              className="block mt-4  px-2  lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               Blog
             </Link>
             <Link
-              to="/api"
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              to="/weather-api"
+              className="block mt-4  px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               API
             </Link>
