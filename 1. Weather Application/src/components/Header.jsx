@@ -1,36 +1,47 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import image from "../assets/images/dropWater.jpg";
 import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // <-- ADDED
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <div className="bg-[#1b1c1f] flex items-center justify-center fixed top-0 right-0 left-0 z-50">
-      <nav className="flex items-center justify-between flex-wrap  w-[95%] xl:w-[65%]  p-6">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "shadow-md bg-[#1b1c1f]" : "bg-[#1b1c1f]"}
+
+        }`}
+    >
+      <nav className="flex items-center justify-between flex-wrap w-[95%] xl:w-[65%] mx-auto p-6 transition-all duration-300">
+        {/* Logo */}
         <div className="flex-shrink-0 text-white mr-6">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img
               className="h-8 w-8 mr-2"
-              width="54"
-              height="54"
               src={image}
               alt="Logo"
+              width="54"
+              height="54"
             />
             <span className="font-semibold text-xl tracking-tight text-teal-100">
-              World Weather{" "}
+              World Weather
             </span>
-          </a>
+          </Link>
         </div>
 
-        {/* Hamburger Button */}
+        {/* Hamburger */}
         <div className="block lg:hidden">
           <button
-            onClick={toggleMenu}
+            onClick={() => setIsMenuOpen((prev) => !prev)}
             className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
           >
             <svg
@@ -44,41 +55,27 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
+        {/* Links */}
         <div
-          className={`w-full ${
-            isMenuOpen ? "block" : "hidden"
-          } flex-grow lg:flex lg:items-center lg:w-auto`}
+          className={`w-full ${isMenuOpen ? "block" : "hidden"
+            } flex-grow lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-sm lg:flex-grow">
-            <Link
-              to="/features"
-              className="block mt-4 px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-            >
-              Features
-            </Link>
             <NavLink
               to="/liveradar"
-              className="block mt-4  px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              className="block mt-4 px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               Live Radar
             </NavLink>
-
-            <Link
-              to="/server-alerts"
-              className="block mt-4  px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
-            >
-              Server Alerts
-            </Link>
             <Link
               to="/weather-blog"
-              className="block mt-4  px-2  lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              className="block mt-4 px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               Blog
             </Link>
             <Link
               to="/weather-api"
-              className="block mt-4  px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              className="block mt-4 px-2 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
             >
               API
             </Link>
@@ -94,7 +91,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

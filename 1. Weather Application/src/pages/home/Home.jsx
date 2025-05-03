@@ -6,12 +6,11 @@ import Trust from "./Trust.jsx"
 import Stay from "./Stay.jsx"
 import Blog from "./Blog.jsx"
 import ApiSection from "./ApiSection.jsx"
-import Footer from "./Footer.jsx"
 
 const Home = () => {
 
   return (
-    <div className="bg-[#1b1c1f] mt-11 pt-8">
+    <div className="bg-[#1b1c1f]  pt-8">
       {/* Banner text  */}
       <div className="flex items-center justify-center pb-5">
       <div className="text-white text-center py-7 w-[500px] md:w-[600px] lg:w-[100%]">
@@ -57,12 +56,6 @@ const Home = () => {
         <Blog />
         <ApiSection />
       </div>
-
-      {/* Footer */}
-      <div>
-        <Footer/>
-      </div>
-
 
     </div>
   )
