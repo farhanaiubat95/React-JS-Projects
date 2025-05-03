@@ -5,6 +5,8 @@ import Card from "./Card.jsx"
 import Trust from "./Trust.jsx"
 import Stay from "./Stay.jsx"
 import Blog from "./Blog.jsx"
+import ApiSection from "./ApiSection.jsx"
+import Footer from "./Footer.jsx"
 
 const Home = () => {
 
@@ -51,9 +53,16 @@ const Home = () => {
       </div>
 
       {/* Blog */}
-      <div>
-        <Blog/>
+      <div className="w-[95%] xl:w-[65%] md:mx-auto">
+        <Blog />
+        <ApiSection />
       </div>
+
+      {/* Footer */}
+      <div>
+        <Footer/>
+      </div>
+
 
     </div>
   )
