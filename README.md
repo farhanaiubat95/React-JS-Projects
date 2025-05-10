@@ -15,10 +15,6 @@ Designed for weather chasing, daily planning, and travel!
 - 🌦️ **Current Location Weather** — Displays temperature and icon
 - 📱 **Mobile Responsive** — Works on phones, tablets, and desktops
 
-## 🛠️ Built With
 
-- [React](https://reactjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [React Router](https://reactrouter.com/en/main)
 
 
