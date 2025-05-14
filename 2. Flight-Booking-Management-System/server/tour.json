@@ -1,0 +1,110 @@
+[
+  {
+    "flightFrom": "Dhaka",
+    "flightTo": "Germany",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 20,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Sylhet",
+    "flightTo": "Australia",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 30,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Dhaka",
+    "flightTo": "Itali",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 50,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Sylhet",
+    "flightTo": "Brazil",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 60,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Chittagong",
+    "flightTo": "USA",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 70,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Sylhet",
+    "flightTo": "Canada",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 80,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Dhaka",
+    "flightTo": "chili",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 90,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Sylhet",
+    "flightTo": "UK",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 95,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  },
+  {
+    "flightFrom": "Mymensingh",
+    "flightTo": "Thailand",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxperson": 40,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  }
+]

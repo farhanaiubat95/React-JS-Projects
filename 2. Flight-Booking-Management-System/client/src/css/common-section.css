@@ -1,0 +1,47 @@
+.common_section{
+    background: url(../assets/images/common-section-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.common_section_overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.common-section-h1{
+    text-shadow: var(--text-shadow1);
+}
+
+/* pagination start */
+.pagination {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #08C2FF;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.active__page{
+    color: #fff !important ;
+    padding: 5px 13px;
+    border-radius: 50px;
+    background-color: #08C2FF;
+}
+/* pagination end */
+
+/* Tour Details start */
+.rating_group span{
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.loginimg{
+    background: url(../assets/images/loginimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.log-text h1{
+    font-family: var(--subtitle-font-name);
+}
+
+.log-form h2{
+    font-family: var(--subtitle-font-name);
+}
+.form-img {
+    top: -31%;
+    left: 37%;
+}
+.form-img-overlay {
+    top: 0%;
+    left: 0%;
+    background-color: #0435454d;
+}

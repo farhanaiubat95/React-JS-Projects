@@ -1,0 +1,60 @@
+.booking{
+    background-color: #38bbee4d;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    left: 0px;
+    border: 1px solid #0698d1;
+}
+
+.booking__form input{
+width: 100%;
+background-color: transparent;
+border-bottom: 1px solid #0698d1;
+border-radius: 10px;
+padding: 7px;
+color: #f4e0e0f6;
+margin: 5px 0;
+}
+.booking__form input::placeholder{
+    color: #f4e0e0f6;
+    font-size: 14px;
+}
+.booking__form input:focus{
+    outline: none;
+}
+
+.thank-you .thank-i{
+    font-size: 40px;
+    color: #10d617;
+}
+.thank-you h2{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0698d1;
+    font-family: var(--subtitle-font-name);
+}
+.thank-you p{
+    color: #f4e0e0f6;
+}
+.thankyou-img{
+    background: url(../assets/images/thank.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+
+}
+.thank-overlay{
+    background-color: #00000076;
+    position: absolute;
+    top: 0;
+    left: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

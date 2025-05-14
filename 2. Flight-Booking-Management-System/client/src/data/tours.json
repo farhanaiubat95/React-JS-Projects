@@ -1,0 +1,14 @@
+[
+  {
+    "flightFrom": "Dhaka",
+    "flightTo": "Germany",
+    "departureDate": "2025-02-12",
+    "duration": "2025-02-16",
+    "price": 2000,
+    "maxPersion": 10,
+    "description": "this is the description",
+    "reviews": [],
+    "photo": "../assets/images/tourimg01.jpg",
+    "featured": true
+  }
+]
